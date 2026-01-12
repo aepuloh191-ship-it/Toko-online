@@ -1,16 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
+  background: #0f172a;
+  color: #e5e7eb;
+  font-family: 'Poppins', sans-serif;
 }
 
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(180deg, #020617, #0f172a);
+}
+
+.hero h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 42px;
+  letter-spacing: 4px;
+}
+
+.hero p {
+  margin-top: 10px;
+  color: #facc15;
+  letter-spacing: 2px;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+/* CARD PRODUK */
 .produk {
-  border: 1px solid #ddd;
-  padding: 15px;
-  margin-bottom: 10px;
-  max-width: 300px;
+  background: #020617;
+  border-radius: 14px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
 }
 
+.produk:hover {
+  transform: translateY(-8px);
+}
+
+.produk h2 {
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+}
+
+.harga {
+  color: #facc15;
+  font-size: 20px;
+  margin-bottom: 25px;
+}
+
+/* BUTTON */
 button {
-  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid #facc15;
+  color: #facc15;
+  padding: 12px 26px;
+  border-radius: 30px;
+  font-size: 14px;
+  letter-spacing: 2px;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #facc15;
+  color: #020617;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #020617;
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #9ca3af;
 }
